@@ -1,0 +1,92 @@
+{
+  "posts": [
+    {
+      "id": 1690534549161,
+      "name": "Mehmet",
+      "title": "ikinciPost",
+      "message": "denemeletr"
+    },
+    {
+      "id": 1690537990474,
+      "name": "Mehmet",
+      "title": "sdd",
+      "message": "asfasfsaf"
+    },
+    {
+      "id": 1690538001445,
+      "name": "Mehmet",
+      "title": "asfa",
+      "message": "fhfgnfdgnsgfdg"
+    },
+    {
+      "id": 1690538009404,
+      "name": "Mehmet",
+      "title": "adfgadfg",
+      "message": "afbadfbadbdvsdfg"
+    },
+    {
+      "id": 1690538022430,
+      "name": "Mehmet",
+      "title": "adfdbadfbd",
+      "message": "dfbdasbdasf"
+    },
+    {
+      "id": 1690582757714,
+      "name": "Denene1",
+      "title": "harika is cikardim",
+      "message": "denem ddenem denme deneme denmedenem ddenem denme deneme denmedenem ddenem denme deneme denmedenem ddenem denme deneme denmedenem ddenem denme deneme denmedenem ddenem denme deneme denmedenem ddenem denme deneme denme"
+    },
+    {
+      "id": 1690582846404,
+      "name": "Denene1",
+      "title": "bassari tesadüf ddegilddir",
+      "message": "basaribasaribasaribasaribasaribasari basaribasaribasaribasaribasari basaribasaribasaribasaribasaribasaribasaribasari basaribasaribasaribasaribasari basaribasaribasaribasari"
+    },
+    {
+      "id": 1690584644283,
+      "name": "Denene1",
+      "title": "model kontrolü",
+      "message": "\"userId\": 10,\n\"userName\": \"Mehmet\",\n\"ame\": \"Mehmet\",\n\"surName\": \"Aydin\",\n\"email\": \" deneme1@denem.com\",\n\"password\": \"123456\""
+    },
+    {
+      "id": 1690590589463,
+      "name": "Mehmet",
+      "title": "hatayi cöz",
+      "message": "djkgndafüugadudvbiüre"
+    }
+  ],
+  "users": [
+    {
+      "userId": 10,
+      "userName": "Mehmet",
+      "name": "Mehmet",
+      "surName": "Aydin",
+      "email": " deneme1@denem.com",
+      "password": "123456"
+    },
+    {
+      "id": 1690590721742,
+      "userName": "denemem1",
+      "name": "Denene1",
+      "surName": "denem1",
+      "email": "deneme@deneme.com",
+      "password": "123123"
+    },
+    {
+      "id": 1690590962959,
+      "userName": "denemem2",
+      "name": "Denene2",
+      "surName": "ddeneme",
+      "email": "denme2@deneme.com",
+      "password": "223344"
+    },
+    {
+      "id": 1690591141324,
+      "userName": "denemem3",
+      "name": "Denene3",
+      "surName": "deneme",
+      "email": "denme3@deneme.com",
+      "password": "1122333"
+    }
+  ]
+}
