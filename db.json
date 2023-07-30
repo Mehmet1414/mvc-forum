@@ -53,6 +53,27 @@
       "name": "Mehmet",
       "title": "hatayi cöz",
       "message": "djkgndafüugadudvbiüre"
+    },
+    {
+      "id": 1690731438431,
+      "name": "Denene1",
+      "title": "tarih eklendi",
+      "date": "",
+      "message": "kontrol amacli yaziyorum"
+    },
+    {
+      "id": 1690731646213,
+      "name": "Mehmet",
+      "title": "tarih: new Date()",
+      "date": "2023-07-30T15:40:46.213Z",
+      "message": "kontrol amaclil gönderi"
+    },
+    {
+      "id": 1690731759155,
+      "name": "Mehmet",
+      "title": "new  Date().toString()",
+      "date": "Sun Jul 30 2023",
+      "message": "tekrar gönderdim"
     }
   ],
   "users": [
@@ -87,6 +108,14 @@
       "surName": "deneme",
       "email": "denme3@deneme.com",
       "password": "1122333"
+    },
+    {
+      "id": 1690602059423,
+      "userName": "Güldeen",
+      "name": "Ahmet",
+      "surName": "Eymen",
+      "email": "denem3@deneme.com",
+      "password": "112233"
     }
   ]
 }

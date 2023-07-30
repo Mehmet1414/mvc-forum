@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import LoginModel from "./LoginModel"
 import LoginView from "./LoginView"
 
-const LoginControler = ({setFilterUserName}) => {
+const LoginControler = () => {
     const navigate=useNavigate()
     const model = new LoginModel()
     const [userLogin,setUserLogin]=useState(model.state)

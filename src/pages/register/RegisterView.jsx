@@ -1,7 +1,18 @@
+import { Link } from "react-router-dom";
+
 const RegisterView = ({ handleSubmit, onInputChance }) => {
   return (
     <>
       <div className=" container flex flex-col items-center gap-4 mt-[10%] mx-auto  ">
+        <header className=" w-[60%] flex justify-between items-end px-4 ">
+          <span className=" text-xl font-bold">
+            <span className=" bg-orange-700 px-5 text-5xl font-bold rounded-full mr-[-24px] ">
+              f
+            </span>
+            orum
+          </span>
+          <span>Kayit Ekrani</span>
+        </header>
         <form
           onSubmit={handleSubmit}
           className=" max-w-md  bg-neutral-800 shadow shadow-amber-300/30 rounded-lg flex flex-col gap-4 w-[60%] p-10 "
@@ -64,6 +75,15 @@ const RegisterView = ({ handleSubmit, onInputChance }) => {
             >
               KAYDOL
             </button>
+          </span>
+          <span className=" text-xs text-slate-400">
+            Kullanici Kaydiniz Varsa Giris icin{" "}
+            <Link
+              className=" hover:text-amber-400 transition-all duration-200 underline"
+              to={"/login"}
+            >
+              Tiklayiniz...
+            </Link>
           </span>
         </form>
       </div>

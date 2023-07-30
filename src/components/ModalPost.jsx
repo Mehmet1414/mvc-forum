@@ -1,15 +1,19 @@
+
+
 const ModalPost = ({ showModal, setShowModal, filterState }) => {
   console.log(filterState);
   return (
     <>
       <div className=" bg-white/30 z-10 fixed top-0 h-full w-full   ">
+          
+            
+        <div className="container top-20 relative mx-auto max-w-xl bg-neutral-800 shadow shadow-amber-300/30 rounded-lg w-[60%] h-[80%] px-8 py-10 overflow-auto  ">
           <button
             onClick={() => setShowModal(!showModal)}
-            className=" absolute border border-amber-400 px-2 text-amber-400 top-24 right-40 z-20"
+            className=" bg-neutral-800 border border-amber-400 px-2 text-amber-400 sticky left-full top-0  "
           >
             x
           </button>
-        <div className="container top-20 relative mx-auto max-w-xl bg-neutral-800 shadow shadow-amber-300/30 rounded-lg w-[60%] h-[80%] px-8 py-10 overflow-auto ">
           <p><span className=" text-amber-500">{filterState[0].name}</span> kullanicisina ait mesajlar</p>
           {filterState.map((post) => (
             <div key={post.id} className=" py-3 ">
@@ -22,6 +26,7 @@ const ModalPost = ({ showModal, setShowModal, filterState }) => {
             </div>
           ))}
         </div>
+          
       </div>
     </>
   );

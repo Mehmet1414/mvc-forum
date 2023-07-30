@@ -3,6 +3,7 @@ class AddPostModel {
     id: new Date().getTime(),
     name: "",
     title: "",
+    date: new Date().toDateString(),
     message: "",
   };
 }

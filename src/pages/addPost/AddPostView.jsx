@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 const AddPostView = ({ inputChange, handleSubmit }) => {
   return (
     <>
-    <Header />
+    
       <div className=" container flex flex-col items-center gap-4 mt-[10%] mx-auto  ">
         <form
           onSubmit={handleSubmit}

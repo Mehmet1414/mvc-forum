@@ -1,43 +1,46 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Header = () => {
-  const [showAddLink, setShowAdLink] = useState(true);
+  const location = useLocation()
   return (
     <>
-      <header className=" container  px-8 py-5 m-auto sticky top-0 backdrop-blur-[5px] border-b-2  border-b-amber-500/80 flex justify-between items-center ">
-       <NavLink  onClick={()=> setShowAdLink(true)} to={"/"}>
-        <span className=" text-xl font-bold">
-          <span className=" bg-orange-700 px-5 text-5xl font-bold rounded-full mr-[-24px] ">
-            f
+      <header
+        className={` container  px-8 py-5 m-auto sticky top-0 backdrop-blur-[5px] border-b-2  border-b-amber-500/80 flex justify-between items-center ${
+          location.pathname === "/login" || location.pathname === "/register"
+            ? "hidden"
+            : "visible"
+        }`}
+      >
+        <NavLink to={"/list_post"}>
+          <span className=" text-xl font-bold ">
+            <span className=" bg-orange-700 px-5 text-5xl font-bold rounded-full mr-[-24px] ">
+              f
+            </span>
+            orum
           </span>
-          orum
-        </span>
-       </NavLink>
+        </NavLink>
         <span>
-        {showAddLink ? (
           <NavLink
-            onClick={() => setShowAdLink(false)}
-            className=" font-bold"
+            className={` font-bold ${
+              location.pathname === "/add_post" ? "hidden" : ""
+            } `}
             to={"/add_post"}
           >
             Yeni Ekle
           </NavLink>
-        ) : (
+
           <NavLink
-            onClick={()=>setShowAdLink(true)}
-            className=" font-bold"
+            className={` font-bold ${
+              location.pathname === "/list_post" ? "hidden" : ""
+            } `}
             to={"/list_post"}
           >
             Gönderi Listesi
           </NavLink>
-        )}
-          <span>
-            user
-          </span>
-        </span>
 
-        </header>
+          <span>{/* user  gelecek */}</span>
+        </span>
+      </header>
     </>
   );
 };

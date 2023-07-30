@@ -24,7 +24,7 @@ const AddPostControler = () => {
 
 
     if (respenseDta) {   
-        navigate("/")
+        navigate("/list_post")
         return
     }
   };
