@@ -19,7 +19,7 @@ const ModalPost = ({ showModal, setShowModal, filterState }) => {
             <div key={post.id} className=" py-3 ">
               <div  className=" bg-white rounded-xl border border-amber-400 flex items-center justify-between p-3">
                 <div className=" text-neutral-800 overflow-auto">
-                  <h1 className=" text-4xl text-center mb-2 uppercase ">{post.title}</h1>
+                  <h3 className=" text-4xl text-center mb-2 uppercase ">{post.title}</h3>
                   <p>{post.message}</p>
                 </div>
               </div>

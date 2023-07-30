@@ -80,7 +80,7 @@ const RegisterView = ({ handleSubmit, onInputChance }) => {
             Kullanici Kaydiniz Varsa Giris icin{" "}
             <Link
               className=" hover:text-amber-400 transition-all duration-200 underline"
-              to={"/login"}
+              to={"/"}
             >
               Tiklayiniz...
             </Link>

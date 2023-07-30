@@ -6,7 +6,7 @@ const Header = () => {
     <>
       <header
         className={` container  px-8 py-5 m-auto sticky top-0 backdrop-blur-[5px] border-b-2  border-b-amber-500/80 flex justify-between items-center ${
-          location.pathname === "/login" || location.pathname === "/register"
+          location.pathname === "/" || location.pathname === "/register"
             ? "hidden"
             : "visible"
         }`}

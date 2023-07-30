@@ -20,7 +20,7 @@ const RegisterControler = () => {
     console.log(response)
 
     if (response) {
-      navigate("/login")
+      navigate("/")
     }
   };
 console.log(userState)

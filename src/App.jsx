@@ -7,12 +7,11 @@ import LoginControler from "./pages/login/LoginControler";
 import RegisterControler from "./pages/register/RegisterControler";
 
 function App() {
-
   return (
-    <BrowserRouter>  
-    <Header />
+    <BrowserRouter>
+      <Header />
       <Routes>
-        <Route path="/login" element={<LoginControler />} />
+        <Route path="/" element={<LoginControler />} />
         <Route path="/list_post" element={<ListPostControler />} />
         <Route path="/add_post" element={<AddPostControler />} />
         <Route path="/register" element={<RegisterControler />} />

@@ -8,8 +8,7 @@ const LoginControler = () => {
     const navigate=useNavigate()
     const model = new LoginModel()
     const [userLogin,setUserLogin]=useState(model.state)
-    console.log(userLogin.userName)
-    console.log(userLogin.password)
+    //console.log("userLogin.userName>>>",userLogin.userName)
 
     const onInputchange = (label,value)=>{
       const copyUserLogin = {...userLogin}
@@ -20,19 +19,21 @@ const LoginControler = () => {
     const handleSbmit = async(e)=>{
       e.preventDefault()
       const userResponse = await axios.get("http://localhost:3006/users")
-      console.log(userResponse.data)
+      //console.log(userResponse.data)
       const userNames =userResponse.data.map((user)=>user.userName)
-      const filterUserName = userNames.filter((user)=>user.userName === userLogin.userName)
+      const findUserName = userNames.find((user)=>user === userLogin.userName)
+
       const emails =userResponse.data.map((user)=>user.email)
-      const filterEmail =emails.filter((user)=>user.email ===userLogin.email)
+      const findEmail =emails.find((user)=>user ===userLogin.email)
+
       const passwords =userResponse.data.map((user)=>user.password)
-      const filterPassword = passwords.filter((user)=>user.password===userLogin.password)
+      const findPassword = passwords.find((user)=>user===userLogin.password)
       
-      if (filterUserName || filterEmail && filterPassword ) {
+      if (!findUserName || !findEmail && !findPassword ) {
         
-        navigate("/list_post")
-      }else{
         alert("kullanici veya sifre hatali")
+      }else{
+        navigate("/list_post")
       }
     }
   return <LoginView onInputchange={onInputchange} handleSbmit={handleSbmit} />
