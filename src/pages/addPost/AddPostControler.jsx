@@ -11,11 +11,12 @@ const AddPostControler = () => {
   const [addForm, setAddForm] = useState(model.state);
 
   const inputChange = (label, value) => {
-    const copyAddForm = { ...addForm };
 
+    setAddForm((prev)=>({...prev, [label]:value}))
+    
+    /* const copyAddForm = { ...addForm };
     copyAddForm[label] = value;
-
-    setAddForm(copyAddForm);
+    setAddForm(copyAddForm); */
   };
 
   const handleSubmit = async (e) => {

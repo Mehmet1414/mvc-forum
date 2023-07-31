@@ -6,7 +6,7 @@ const ListPostControler = () => {
   const [blogState, setBlogState] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [filterState, setFilterState] = useState(null)
-  console.log(blogState)
+  //console.log(blogState)
 
   useEffect(() => {
     (async () => {

@@ -1,7 +1,11 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 
-const Header = () => {
-  const location = useLocation()
+const Header = ({setUserData}) => {
+  const navigate=useNavigate()
+  const location = useLocation();
+  const data= localStorage.getItem("user")
+  const User = JSON.parse(data)
+
   return (
     <>
       <header
@@ -19,7 +23,7 @@ const Header = () => {
             orum
           </span>
         </NavLink>
-        <span>
+        <span className="flex justify-center items-center gap-4">
           <NavLink
             className={` font-bold ${
               location.pathname === "/add_post" ? "hidden" : ""
@@ -38,7 +42,22 @@ const Header = () => {
             Gönderi Listesi
           </NavLink>
 
-          <span>{/* user  gelecek */}</span>
+          <span className="flex justify-center items-center gap-2 border-l border-l-amber-500 pl-2">
+              <span className=" border bg-amber-500 rounded-full w-10 h-10 flex justify-center items-center font-bold  ">
+                {User?.userName[0]}
+              </span>{" "}
+              <span className="flex flex-col ">
+              <span>{User?.userName}</span>
+              <span onClick={()=>{
+                setUserData(null)
+                localStorage.removeItem("loginUser")
+                navigate("/")
+              }} className="text-xs font-semibold  rounded-xl hover:text-amber-400 cursor-pointer">
+                CIKIS
+              </span>
+              </span>
+            
+          </span>
         </span>
       </header>
     </>

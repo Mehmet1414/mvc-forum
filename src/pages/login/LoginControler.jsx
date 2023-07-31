@@ -1,42 +1,50 @@
-import axios from "axios"
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
-import LoginModel from "./LoginModel"
-import LoginView from "./LoginView"
+import axios from "axios";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import LoginModel from "./LoginModel";
+import LoginView from "./LoginView";
 
-const LoginControler = () => {
-    const navigate=useNavigate()
-    const model = new LoginModel()
-    const [userLogin,setUserLogin]=useState(model.state)
-    //console.log("userLogin.userName>>>",userLogin.userName)
+const LoginControler = ({setUserData}) => {
 
-    const onInputchange = (label,value)=>{
-      const copyUserLogin = {...userLogin}
-      copyUserLogin[label]=value
-      setUserLogin(copyUserLogin)
+ 
 
-    }
-    const handleSbmit = async(e)=>{
-      e.preventDefault()
-      const userResponse = await axios.get("http://localhost:3006/users")
-      //console.log(userResponse.data)
-      const userNames =userResponse.data.map((user)=>user.userName)
-      const findUserName = userNames.find((user)=>user === userLogin.userName)
+  const navigate = useNavigate();
+  const loginModel = new LoginModel();
+  const [userLogin, setUserLogin] = useState(loginModel.state);
 
-      const emails =userResponse.data.map((user)=>user.email)
-      const findEmail =emails.find((user)=>user ===userLogin.email)
 
-      const passwords =userResponse.data.map((user)=>user.password)
-      const findPassword = passwords.find((user)=>user===userLogin.password)
+  console.log("userLogin>>>", userLogin);
+  const onInputchange = (label, value) => {
+    setUserLogin((user) => ({ ...user, [label]: value }));
+  };
+
+
+  const handleSbmit = async (e) => {
+    e.preventDefault();
+    const userResponse = await axios.get("http://localhost:3006/users");
+    //console.log(userResponse.data)
+
+    const { userName, password } = userLogin;
+    
+    //console.log("User>>>>>", userName, password);
+    const foundUser = userResponse.data.find(
+      (user) => user.userName === userName
+      );
+      console.log("foundUser>>>", foundUser);
+      //console.log("userName>>>", userName);
+      setUserData(foundUser)
       
-      if (!findUserName || !findEmail && !findPassword ) {
-        
-        alert("kullanici veya sifre hatali")
-      }else{
-        navigate("/list_post")
-      }
+      const data = JSON.stringify(foundUser)
+      localStorage.setItem("user",data)
+    
+    if (foundUser?.userName === userName && foundUser?.password === password) {
+      navigate("/list_post");
+    } else {
+      alert("Kullanıcı adı, e-posta veya şifre hatalı");
     }
-  return <LoginView onInputchange={onInputchange} handleSbmit={handleSbmit} />
-}
+  };
 
-export default LoginControler
+  return <LoginView onInputchange={onInputchange} handleSbmit={handleSbmit} />;
+};
+
+export default LoginControler;

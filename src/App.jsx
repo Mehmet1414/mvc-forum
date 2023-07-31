@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
 import AddPostControler from "./pages/addPost/AddPostControler";
@@ -7,16 +8,25 @@ import LoginControler from "./pages/login/LoginControler";
 import RegisterControler from "./pages/register/RegisterControler";
 
 function App() {
+const [userData,setUserData]=useState(null)
+  console.log(userData)
   return (
-    <BrowserRouter>
-      <Header />
+    <>
+      <Header setUserData={setUserData} />
       <Routes>
-        <Route path="/" element={<LoginControler />} />
-        <Route path="/list_post" element={<ListPostControler />} />
-        <Route path="/add_post" element={<AddPostControler />} />
+        {!userData ? (
+          <Route path="/" element={<LoginControler setUserData={setUserData} />} />
+
+        ):(
+          <>
+          
+          <Route path="/list_post" element={<ListPostControler />} />
+          <Route path="/add_post" element={<AddPostControler />} />
+          </>
+        )}
         <Route path="/register" element={<RegisterControler />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 

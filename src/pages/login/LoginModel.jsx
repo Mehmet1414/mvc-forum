@@ -1,8 +1,10 @@
 class LoginModel {
-  state = {
-    userName: "",
-    email: "",
-    password: "",
-  };
+  constructor() {
+    this.state = {
+      userName: "",
+      email: "",
+      password: "",
+    };
+  }
 }
 export default LoginModel

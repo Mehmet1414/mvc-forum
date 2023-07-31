@@ -18,9 +18,10 @@ const ModalPost = ({ showModal, setShowModal, filterState }) => {
           {filterState.map((post) => (
             <div key={post.id} className=" py-3 ">
               <div  className=" bg-white rounded-xl border border-amber-400 flex items-center justify-between p-3">
-                <div className=" text-neutral-800 overflow-auto">
+                <div className=" text-slate-800/80 overflow-auto">
                   <h3 className=" text-4xl text-center mb-2 uppercase ">{post.title}</h3>
                   <p>{post.message}</p>
+                  <span className=" text-xs text-slate-600/80 " >{post.date}</span>
                 </div>
               </div>
             </div>

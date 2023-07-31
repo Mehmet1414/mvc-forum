@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 const LoginView = ({ onInputchange, handleSbmit }) => {
   return (
     <>
+     
       <div className=" container flex flex-col items-center gap-4 my-[30%] mx-auto  ">
-      <header className=" w-[60%] flex justify-between items-end px-2">
+        <header className=" w-[60%] flex justify-between items-end px-2">
           {" "}
           <span className=" text-xl font-bold">
             <span className=" bg-orange-700 px-5 text-5xl font-bold rounded-full mr-[-24px] ">
