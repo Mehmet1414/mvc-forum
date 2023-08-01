@@ -1,6 +1,8 @@
-import Header from "../../components/Header";
 
 const AddPostView = ({ inputChange, handleSubmit }) => {
+  const data= localStorage.getItem("user")
+  const user = JSON.parse(data)
+  //console.log(user)
   return (
     <>
     
@@ -15,7 +17,9 @@ const AddPostView = ({ inputChange, handleSubmit }) => {
               onChange={(e) => inputChange("name", e.target.value)}
               className=" bg-transparent/50 rounded-md p-2 focus:outline-none caret-amber-400/70 text-amber-400/70 focus:ring-1 ring-inset focus: ring-amber-400/40 "
               type="text"
-              id="name"
+              id="userName"
+              disabled
+              defaultValue={user.userName}
               required
             />
           </fieldset>

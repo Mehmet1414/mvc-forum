@@ -8,7 +8,7 @@ const AddPostControler = () => {
 
     const navigate = useNavigate()
   const model = new AddPostModel();
-  const [addForm, setAddForm] = useState(model.state);
+  const [addForm, setAddForm] = useState(model.state );
 
   const inputChange = (label, value) => {
 
@@ -18,15 +18,17 @@ const AddPostControler = () => {
     copyAddForm[label] = value;
     setAddForm(copyAddForm); */
   };
+  console.log(addForm)
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-   const respenseDta = await axios.post("http://localhost:3006/posts", addForm);
+    const formData = {...addForm}
+   const respenseDta = await axios.post("http://localhost:3006/posts", formData);
 
+   console.log(respenseDta)
 
     if (respenseDta) {   
         navigate("/list_post")
-        return
     }
   };
 

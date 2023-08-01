@@ -10,7 +10,7 @@ import RegisterControler from "./pages/register/RegisterControler";
 function App() {
   const navigate = useNavigate();
   const [userData, setUserData] = useState(localStorage.getItem("user"));
-  console.log(userData);
+  //console.log(userData);
   useEffect(() => {
     if (!userData) {
       navigate("/");

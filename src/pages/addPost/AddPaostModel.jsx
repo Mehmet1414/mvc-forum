@@ -1,7 +1,9 @@
+
+
 class AddPostModel {
   state = {
     id: new Date().getTime(),
-    name: "",
+    userName:"",
     title: "",
     date: new Date().toDateString(),
     message: "",

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const LoginView = ({ onInputchange, handleSbmit }) => {
   return (
     <>
-     
       <div className=" container flex flex-col items-center gap-4 my-[30%] mx-auto  ">
         <header className=" w-[60%] flex justify-between items-end px-2">
           {" "}
