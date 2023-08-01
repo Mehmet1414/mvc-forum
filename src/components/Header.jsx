@@ -50,7 +50,7 @@ const Header = ({setUserData}) => {
               <span>{User?.userName}</span>
               <span onClick={()=>{
                 setUserData(null)
-                localStorage.removeItem("loginUser")
+                localStorage.removeItem("user")
                 navigate("/")
               }} className="text-xs font-semibold  rounded-xl hover:text-amber-400 cursor-pointer">
                 CIKIS
