@@ -24,13 +24,13 @@ const ListPostView = ({
               </div>
               <div className=" w-full flex flex-col flex-1 items-start capitalize sm:border-l border-l-amber-500/50 sm:pl-2 max-sm:block max-sm:mb-3 max-sm:border-b max-sm:border-b-amber-400/50 ">
                 <span className=" flex flex-col items-start  ">
-                  <span className=" border bg-amber-500 rounded-full px-3 py-2   ">
-                    {post.name ? post.name[0] : ""}
+                  <span className=" w-10 h-10 flex justify-center items-center font-bold text-lg border bg-amber-500 rounded-full text-zinc-800">
+                    {post.userName ? post.userName[0] : ""}
                   </span>{" "}
-                  <span>{post.name}</span>
+                  <span>{post.userName}</span>
                 </span>
                 <small
-                  onClick={() => showUserPost(post.name)}
+                  onClick={() => showUserPost(post.userName)}
                   className=" text-gray-400 cursor-pointer hover:text-amber-400 "
                 >
                   Diger gönderileri...

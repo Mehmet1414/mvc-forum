@@ -14,8 +14,8 @@ const ModalPost = ({ showModal, setShowModal, filterState }) => {
           >
             x
           </button>
-          <p><span className=" text-amber-500">{filterState[0].name}</span> kullanicisina ait mesajlar</p>
-          {filterState.map((post) => (
+          <p><span className=" text-amber-500">{filterState[0].userName}</span> kullanicisina ait mesajlar</p>
+          {filterState?.map((post) => (
             <div key={post.id} className=" py-3 ">
               <div  className=" bg-white rounded-xl border border-amber-400 flex items-center justify-between p-3">
                 <div className=" text-slate-800/80 overflow-auto">

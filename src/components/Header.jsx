@@ -42,8 +42,8 @@ const Header = ({setUserData}) => {
             Gönderi Listesi
           </NavLink>
 
-          <span className="flex justify-center items-center gap-2 border-l border-l-amber-500 pl-2">
-              <span className=" border bg-amber-500 rounded-full w-10 h-10 flex justify-center items-center font-bold  ">
+          <span className="flex justify-center items-center gap-2 border-l border-l-amber-500 pl-2 capitalize">
+              <span className=" border bg-amber-500 rounded-full w-10 h-10 flex justify-center items-center font-bold text-lg text-zinc-600">
                 {User?.userName[0]}
               </span>{" "}
               <span className="flex flex-col ">

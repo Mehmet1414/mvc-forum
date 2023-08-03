@@ -17,7 +17,7 @@ const ListPostControler = () => {
 
   const showUserPost = (userName) => {
     setShowModal(!showModal)
-    const filterData = blogState.filter((post)=>post.name===userName)
+    const filterData = blogState.filter((post)=>post.userName===userName)
     setFilterState(filterData)
   };
   if (blogState) {

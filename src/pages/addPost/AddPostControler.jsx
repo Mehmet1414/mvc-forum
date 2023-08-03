@@ -5,30 +5,34 @@ import AddPostModel from "./AddPaostModel";
 import AddPostView from "./AddPostView";
 
 const AddPostControler = () => {
-
-    const navigate = useNavigate()
+  const navigate = useNavigate();
   const model = new AddPostModel();
-  const [addForm, setAddForm] = useState(model.state );
-
+  const [addForm, setAddForm] = useState({
+    ...model.state,
+    userName: JSON.parse(localStorage.getItem("user")).userName,
+  });
+console.log(addForm)
   const inputChange = (label, value) => {
+    setAddForm((prev) => ({ ...prev, [label]: value }));
 
-    setAddForm((prev)=>({...prev, [label]:value}))
-    
     /* const copyAddForm = { ...addForm };
     copyAddForm[label] = value;
     setAddForm(copyAddForm); */
   };
-  console.log(addForm)
+  console.log(addForm);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = {...addForm}
-   const respenseDta = await axios.post("http://localhost:3006/posts", formData);
+    
+    const respenseDta = await axios.post(
+      "http://localhost:3006/posts",
+      addForm
+    );
 
-   console.log(respenseDta)
+    console.log(respenseDta);
 
-    if (respenseDta) {   
-        navigate("/list_post")
+    if (respenseDta) {
+      navigate("/list_post");
     }
   };
 

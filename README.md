@@ -1,4 +1,4 @@
 # eksikler
 
-- yeni giris ekraninda kullanici otomatik gelsin / disabled olacak
+- responsive kontrolleriini yap
 

@@ -24,10 +24,10 @@ const LoginView = ({ onInputchange, handleSbmit }) => {
               onChange={(e) =>
                 onInputchange("userName" || "email", e.target.value)
               }
-              className=" bg-transparent/50 rounded-md p-2 focus:outline-none caret-amber-400/70 text-amber-400/70 focus:ring-1 ring-inset focus: ring-amber-400/40 placeholder:text-slate-500 placeholder:text-sm "
+              className=" bg-transparent/50 rounded-md p-2 focus:outline-none caret-amber-400/70 text-amber-400/70 focus:ring-1 ring-inset focus: ring-amber-400/40 placeholder:text-slate-500 placeholder:text-xs "
               type="text"
               id="name"
-              placeholder="Kullanici adi veya mail addresi  giriniz..."
+              placeholder="Kullanici adinizi giriniz..."
               required
             />
           </fieldset>
@@ -35,7 +35,7 @@ const LoginView = ({ onInputchange, handleSbmit }) => {
             <label htmlFor="title"></label>
             <input
               onChange={(e) => onInputchange("password", e.target.value)}
-              className="  bg-transparent/50 rounded-md p-2 focus:outline-none caret-amber-400/70 text-amber-400/70 focus:ring-1 ring-inset focus: ring-amber-400/40  placeholder:text-slate-500 placeholder:text-sm"
+              className="  bg-transparent/50 rounded-md p-2 focus:outline-none caret-amber-400/70 text-amber-400/70 focus:ring-1 ring-inset focus: ring-amber-400/40  placeholder:text-slate-500 placeholder:text-xs"
               type="password"
               id="password"
               placeholder="Sifrenizi giriniz..."

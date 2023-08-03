@@ -1,243 +1,129 @@
 {
   "posts": [
     {
-      "id": 1690534549161,
-      "name": "Mehmet",
-      "title": "ikinciPost",
-      "message": "denemeletr"
-    },
-    {
-      "id": 1690537990474,
-      "name": "Mehmet",
-      "title": "sdd",
-      "message": "asfasfsaf"
-    },
-    {
-      "id": 1690538001445,
-      "name": "Mehmet",
-      "title": "asfa",
-      "message": "fhfgnfdgnsgfdg"
-    },
-    {
-      "id": 1690538009404,
-      "name": "Mehmet",
-      "title": "adfgadfg",
-      "message": "afbadfbadbdvsdfg"
-    },
-    {
-      "id": 1690538022430,
-      "name": "Mehmet",
-      "title": "adfdbadfbd",
-      "message": "dfbdasbdasf"
-    },
-    {
-      "id": 1690582757714,
-      "name": "Denene1",
-      "title": "harika is cikardim",
-      "message": "denem ddenem denme deneme denmedenem ddenem denme deneme denmedenem ddenem denme deneme denmedenem ddenem denme deneme denmedenem ddenem denme deneme denmedenem ddenem denme deneme denmedenem ddenem denme deneme denme"
-    },
-    {
-      "id": 1690582846404,
-      "name": "Denene1",
-      "title": "bassari tesadüf ddegilddir",
-      "message": "basaribasaribasaribasaribasaribasari basaribasaribasaribasaribasari basaribasaribasaribasaribasaribasaribasaribasari basaribasaribasaribasaribasari basaribasaribasaribasari"
-    },
-    {
-      "id": 1690584644283,
-      "name": "Denene1",
-      "title": "model kontrolü",
-      "message": "\"userId\": 10,\n\"userName\": \"Mehmet\",\n\"ame\": \"Mehmet\",\n\"surName\": \"Aydin\",\n\"email\": \" deneme1@denem.com\",\n\"password\": \"123456\""
-    },
-    {
-      "id": 1690590589463,
-      "name": "Mehmet",
-      "title": "hatayi cöz",
-      "message": "djkgndafüugadudvbiüre"
-    },
-    {
-      "id": 1690731438431,
-      "name": "Denene1",
-      "title": "tarih eklendi",
-      "date": "",
-      "message": "kontrol amacli yaziyorum"
-    },
-    {
-      "id": 1690731646213,
-      "name": "Mehmet",
-      "title": "tarih: new Date()",
-      "date": "2023-07-30T15:40:46.213Z",
-      "message": "kontrol amaclil gönderi"
-    },
-    {
-      "id": 1690731759155,
-      "name": "Mehmet",
-      "title": "new  Date().toString()",
-      "date": "Sun Jul 30 2023",
-      "message": "tekrar gönderdim"
-    },
-    {
-      "id": 1690735403484,
-      "name": "Denene1",
-      "title": "deneme yaptim",
-      "date": "Sun Jul 30 2023",
-      "message": "hata ilamzsalm süper olacak"
-    },
-    {
-      "id": 1690754039327,
-      "name": "Gülden",
-      "title": "yeni fonksiyon",
-      "date": "Sun Jul 30 2023",
-      "message": "baklim calisacik mi?"
-    },
-    {
-      "id": 1690879533920,
-      "name": "Mehmet",
-      "title": "deneme",
-      "date": "Tue Aug 01 2023",
-      "message": "clone olarak geri yükledim"
-    },
-    {
-      "id": 1690929840489,
-      "name": "",
-      "title": "kullanici adi deneme",
+      "id": 1690935442276,
+      "userName": "gülden14",
+      "title": "ilk gönderi",
       "date": "Wed Aug 02 2023",
-      "message": "kullanici adi bos geliyordu"
+      "message": "hataasiz kul olmaz"
     },
     {
-      "id": 1690930202921,
-      "name": "",
-      "title": "hala bos geliyor",
+      "id": 1690935477286,
+      "userName": "gülden14",
+      "title": "ikinci",
       "date": "Wed Aug 02 2023",
-      "message": "bu serfer oldu  mu bkalim"
+      "message": "hatasiz yazilim olmaz"
     },
     {
-      "id": 1690930885039,
-      "name": "Mehmet",
-      "title": "bakalim oldu mu?",
+      "id": 1690935505214,
+      "userName": "gülden14",
+      "title": "basari göbek adimdir",
       "date": "Wed Aug 02 2023",
-      "message": "bu sefer oldu gibi geliyor bana"
+      "message": "iste böyle"
     },
     {
-      "id": 1690930984635,
-      "name": "Mehmet",
-      "title": "sen de dene bakalim",
+      "id": 1690968619478,
+      "userName": "Mehmet",
+      "title": "son kontroller",
       "date": "Wed Aug 02 2023",
-      "message": "bu da mi? gol degil artik"
-    },
-    {
-      "id": 1690931153245,
-      "name": "Güldeen",
-      "title": "hata mi verdi bu???",
-      "date": "Wed Aug 02 2023",
-      "message": "kdjfgnaög"
-    },
-    {
-      "id": 1690931425502,
-      "name": "Güldeen",
-      "title": "deneme ",
-      "date": "Wed Aug 02 2023",
-      "message": "basarili olsun lütfen"
-    },
-    {
-      "id": 1690931533144,
-      "name": "Güldeen",
-      "title": "bakalim",
-      "date": "Wed Aug 02 2023",
-      "message": "kullanici adi gelecek mi?"
-    },
-    {
-      "id": 1690931840162,
-      "name": "",
-      "title": "deneyelim ",
-      "date": "Wed Aug 02 2023",
-      "message": "görelim",
-      "userName": ""
-    },
-    {
-      "id": 1690932625818,
-      "title": "hadi bakalim",
-      "date": "Wed Aug 02 2023",
-      "message": "bu sefer olabilir",
-      "userName": ""
-    },
-    {
-      "id": 1690932829046,
-      "title": "deneme",
-      "date": "Wed Aug 02 2023",
-      "message": "ddenem11",
-      "userName": ""
-    },
-    {
-      "id": 1690932961079,
-      "title": "haadi artik",
-      "date": "Wed Aug 02 2023",
-      "message": "cok yorulddum"
-    },
-    {
-      "id": 1690933014208,
-      "title": "tekrar",
-      "date": "Wed Aug 02 2023",
-      "message": "tekrar"
-    },
-    {
-      "id": 1690933068015,
-      "title": "baakalim ",
-      "date": "Wed Aug 02 2023",
-      "message": "oldu mu?"
-    },
-    {
-      "id": 1690933118699,
-      "title": "gelebilir",
-      "date": "Wed Aug 02 2023",
-      "message": "gelir mi gelir"
-    },
-    {
-      "id": 1690933787048,
-      "userName": "",
-      "title": "denem1111",
-      "date": "Wed Aug 02 2023",
-      "message": "hadi ama artik"
+      "message": "hata kontrolleri yapildi"
     }
   ],
   "users": [
     {
-      "userId": 10,
+      "id": 1690935269764,
+      "userName": "Game14",
+      "name": "Mehmet",
+      "surName": "Aydin",
+      "email": "deneme@deneme.com",
+      "password": "112233"
+    },
+    {
+      "id": 1690935322813,
+      "userName": "mega14",
+      "name": "Mehmet",
+      "surName": "Aydin",
+      "email": "deneme@deneme.com",
+      "password": "112233"
+    },
+    {
+      "id": 1690935388577,
+      "userName": "gülden14",
+      "name": "Gülden",
+      "surName": "Aydin",
+      "email": "denem1@deneme.com",
+      "password": "112233"
+    },
+    {
+      "id": 1690958027234,
+      "userName": "Mehmet14",
+      "name": "aa",
+      "surName": "aa",
+      "email": "deneme@deneme.com",
+      "password": "112233"
+    },
+    {
+      "id": 1690958178165,
+      "userName": "Mehmet",
+      "name": "aaa",
+      "surName": "bbb",
+      "email": "denme2@deneme.com",
+      "password": "112233"
+    },
+    {
+      "id": 1690958647402,
+      "userName": "Mehmet",
+      "name": "asdfd",
+      "surName": "asdf",
+      "email": "denem3@deneme.com",
+      "password": "112233"
+    },
+    {
+      "id": 1690960125388,
       "userName": "Mehmet",
       "name": "Mehmet",
       "surName": "Aydin",
-      "email": " deneme1@denem.com",
-      "password": "123456"
-    },
-    {
-      "id": 1690590721742,
-      "userName": "denemem1",
-      "name": "Denene1",
-      "surName": "denem1",
       "email": "deneme@deneme.com",
-      "password": "123123"
+      "password": "112233"
     },
     {
-      "id": 1690590962959,
-      "userName": "denemem2",
-      "name": "Denene2",
-      "surName": "ddeneme",
+      "id": 1690960231634,
+      "userName": "Mehmet",
+      "name": "bbb",
+      "surName": "cccc",
+      "email": "deneme@deneme.com",
+      "password": "112233"
+    },
+    {
+      "id": 1690960370272,
+      "userName": "Mehmet14",
+      "name": "xxxyyy",
+      "surName": "yyyy",
       "email": "denme2@deneme.com",
-      "password": "223344"
-    },
-    {
-      "id": 1690591141324,
-      "userName": "denemem3",
-      "name": "Denene3",
-      "surName": "deneme",
-      "email": "denme3@deneme.com",
       "password": "1122333"
     },
     {
-      "id": 1690602059423,
-      "userName": "Güldeen",
-      "name": "Ahmet",
-      "surName": "Eymen",
-      "email": "denem3@deneme.com",
+      "id": 1690960563156,
+      "userName": "Mehmet14",
+      "name": "eeee",
+      "surName": "rrrr",
+      "email": "denme2@deneme.com",
+      "password": "112233"
+    },
+    {
+      "id": 1690961178982,
+      "userName": "Eymen08",
+      "name": "Eymen",
+      "surName": "Mustafa",
+      "email": "denme2@deneme.com",
+      "password": "112233"
+    },
+    {
+      "id": 1690963347510,
+      "userName": "Mehmet11",
+      "name": "lkdfgmd",
+      "surName": "dlgkndhs",
+      "email": "denme2@deneme.com",
       "password": "112233"
     }
   ]

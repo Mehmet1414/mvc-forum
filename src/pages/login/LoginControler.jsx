@@ -9,7 +9,7 @@ const LoginControler = ({ setUserData }) => {
   const loginModel = new LoginModel();
   const [userLogin, setUserLogin] = useState(loginModel.state);
 
-  console.log("userLogin>>>", userLogin);
+  //console.log("userLogin>>>", userLogin);
   const onInputchange = (label, value) => {
     setUserLogin((user) => ({ ...user, [label]: value }));
   };
@@ -26,7 +26,7 @@ const LoginControler = ({ setUserData }) => {
       (user) => user.userName === userName && user.password === password
     );
     console.log("foundUser>>>", foundUser);
-    //console.log("userName>>>", userName);
+  console.log("userName>>>", userName);
 
     setUserData(foundUser);
 
