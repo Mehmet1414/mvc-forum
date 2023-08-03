@@ -27,6 +27,13 @@
       "title": "son kontroller",
       "date": "Wed Aug 02 2023",
       "message": "hata kontrolleri yapildi"
+    },
+    {
+      "id": 1691044660158,
+      "userName": "Mehmet",
+      "title": "video cekimi",
+      "date": "Thu Aug 03 2023",
+      "message": "gif dosyassi icin kayit"
     }
   ],
   "users": [
@@ -124,6 +131,14 @@
       "name": "lkdfgmd",
       "surName": "dlgkndhs",
       "email": "denme2@deneme.com",
+      "password": "112233"
+    },
+    {
+      "id": 1691044568608,
+      "userName": "Denemem1",
+      "name": "Deneme",
+      "surName": "denem1",
+      "email": "denem1@deneme.com",
       "password": "112233"
     }
   ]
